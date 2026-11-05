@@ -4,180 +4,187 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ADE WALE | AI Video Creator and Visual Storyteller</title>
-<meta name="description" content="AI video creator and visual storyteller making AI commercials, product ads, UGC-style videos and cinematic brand visuals.">
+<meta name="description" content="ADE WALE is an AI video creator and visual storyteller making AI commercials, product ads, UGC-style videos and cinematic brand visuals.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#EEF1F6; --panel:#FFFFFF; --ink:#141A2B; --muted:#586078; --line:#D3D9E6;
-  --accent:#4B3FE0; --accent-ink:#FFFFFF; --tc:#FFB020; --screen:#141A2B;
-  --display:'Bricolage Grotesque',Georgia,sans-serif; --body:'Figtree',system-ui,sans-serif;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--bg:#10131F;--panel:#1A1F31;--ink:#EEF1F8;--muted:#9AA3BD;--line:#2B3250;--accent:#8E86FF;--accent-ink:#10131F;--screen:#0A0C14}
-}
+:root{--bg:#0A0A0B;--panel:#141416;--line:#2A2A2E;--ivory:#F3EDE2;--muted:#A39E92;--gold:#D4AF6A;--display:'Syne',Georgia,sans-serif;--body:'Manrope',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;color-scheme:dark}
+body{background:var(--bg);color:var(--ivory);font:400 1.04rem/1.7 var(--body);-webkit-font-smoothing:antialiased}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-h1,h2,h3{font-family:var(--display);line-height:1.08;letter-spacing:-.02em}
-h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;margin-bottom:12px}
-h3{font-size:1.3rem;font-weight:700;margin-bottom:8px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);line-height:1.05;letter-spacing:-.02em}
+h2{font-size:clamp(2rem,4.6vw,3.2rem);font-weight:800;margin-bottom:12px}
+h3{font-size:1.3rem;font-weight:600;margin-bottom:8px}
 p{max-width:62ch}
-section{padding:84px 0}
-.lead{color:var(--muted);margin-bottom:40px}
-
-/* nav */
-header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font:800 1.2rem var(--display);text-decoration:none}
+section{padding:88px 0}
+.tc{font:500 .78rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:14px}
+.lead{color:var(--muted);margin-bottom:36px}
+header{position:fixed;top:0;left:0;right:0;z-index:10;background:linear-gradient(#0A0A0Bcc,#0A0A0B00)}
+nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font:800 1.2rem var(--display);text-decoration:none;letter-spacing:.04em}
 nav ul{display:flex;gap:26px;list-style:none;padding:0}
-nav ul a{text-decoration:none;font-weight:500;color:var(--muted)}
-nav ul a:hover{color:var(--ink)}
-@media(max-width:680px){nav ul{gap:14px;font-size:.92rem}.hide-sm{display:none}}
-
-/* buttons */
-.btn{display:inline-block;padding:13px 24px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+nav ul a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--ivory)}
+nav ul a:hover{color:var(--gold)}
+@media(max-width:640px){nav ul{gap:16px}.hide-sm{display:none}}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;background:var(--gold);color:#0A0A0B;font-weight:600;text-decoration:none;border:2px solid var(--gold)}
 .btn:hover{filter:brightness(1.1)}
-.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
-.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn.ghost{background:transparent;color:var(--ivory);border-color:var(--ivory)}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
 
 /* hero */
-.hero{padding:72px 0 56px}
-.hero h1{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:800;max-width:15ch}
-.hero p{font-size:1.2rem;color:var(--muted);margin-top:22px}
-.player{margin-top:52px;background:var(--screen);border-radius:18px;padding:18px 18px 22px;color:#EEF1F8}
-.screen{aspect-ratio:21/8;border-radius:10px;background:linear-gradient(120deg,#2A2470,#4B3FE0 55%,#FFB020);display:flex;align-items:center;justify-content:center;font:700 clamp(1rem,3vw,1.8rem) var(--display);text-align:center;padding:16px}
-.tracks{margin-top:16px;position:relative;display:grid;gap:6px}
-.track{display:flex;gap:6px;height:26px}
-.clip{border-radius:5px;background:#3A4270;font-size:.72rem;display:flex;align-items:center;padding:0 9px;white-space:nowrap;overflow:hidden;color:#C9D0EA}
-.clip.v{background:#4B3FE0;color:#fff}.clip.a{background:#1F7A6B;color:#fff}
-.playhead{position:absolute;top:-6px;bottom:-6px;left:0;width:2px;background:var(--tc);box-shadow:0 0 0 1px rgba(255,176,32,.3)}
-.playhead::before{content:"";position:absolute;top:0;left:-5px;border:6px solid transparent;border-top-color:var(--tc)}
-.tcode{margin-top:14px;font:600 .85rem ui-monospace,Menlo,monospace;color:var(--tc)}
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:110px 0 90px;background:#000}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0A0A0B 5%,#0A0A0B66 60%,#0A0A0B33),linear-gradient(0deg,#0A0A0B,transparent 30%)}
+.bar{position:absolute;left:0;right:0;height:5.5vh;background:#000;z-index:2}
+.bar.t{top:0}.bar.b{bottom:0}
+.hero .wrap{position:relative;z-index:3}
+.chip{display:inline-flex;align-items:center;gap:12px;padding:6px 18px 6px 6px;border:1px solid var(--line);border-radius:999px;background:#0A0A0B99;margin-bottom:26px;font:500 .78rem var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.chip img{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:50% 20%;border:2px solid var(--gold)}
+.rec{width:8px;height:8px;border-radius:50%;background:#E5483B}
+.hero h1{font-size:clamp(2.8rem,8vw,6rem);font-weight:800;max-width:13ch}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{font-size:1.15rem;color:#D8D2C6;margin-top:22px}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:56px;align-items:center}
+@media(max-width:820px){.about{grid-template-columns:1fr}}
+.portrait{position:relative;border-radius:6px;overflow:hidden;border:1px solid var(--gold);aspect-ratio:4/5}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 15%;display:block}
+.portrait span{position:absolute;left:12px;bottom:12px;font:500 .72rem var(--mono);letter-spacing:.14em;background:#0A0A0Bcc;padding:5px 10px}
+.about p{margin-bottom:16px;color:#D8D2C6}
 
 /* services */
-.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px}
-.card ul{padding-left:18px;color:var(--muted);margin-top:12px}
-.card p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:26px}
+.card h3{font-size:1.1rem}
+.card p{color:var(--muted);font-size:.96rem}
 
 /* work */
-.work{display:grid;gap:56px}
-.piece{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:36px;align-items:center}
-.piece:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(0,1.1fr)}
-.piece:nth-child(even) .vid{order:2}
-@media(max-width:820px){.piece,.piece:nth-child(even){grid-template-columns:1fr}.piece:nth-child(even) .vid{order:0}}
-.vid{background:var(--screen);border-radius:14px;overflow:hidden;aspect-ratio:16/9;position:relative;display:flex;align-items:center;justify-content:center}
-.vid.vertical{aspect-ratio:9/16;max-width:300px;margin:0 auto;width:100%}
-.vid video{width:100%;height:100%;object-fit:cover;position:relative;z-index:1}
-.vid .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:#9AA3BD;font-size:.9rem}
-.meta{font-weight:600;color:var(--accent);font-size:.92rem;margin-bottom:6px}
-.piece dl{margin-top:16px;display:grid;gap:8px;color:var(--muted)}
-.piece dt{display:inline;font-weight:600;color:var(--ink)}
-.piece dd{display:inline;margin:0}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+.filters button{font:500 .8rem var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ivory);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--gold);color:#0A0A0B;border-color:var(--gold)}
+.reels{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;align-items:start}
+.reel.wide{grid-column:span 2}
+@media(max-width:700px){.reel.wide{grid-column:auto}}
+.reel[hidden]{display:none}
+.vid{background:#000;border-radius:8px;overflow:hidden;aspect-ratio:9/16;border:1px solid var(--line);max-width:360px;margin:0 auto}
+.reel.wide .vid{aspect-ratio:16/9;max-width:none}
+.vid video{width:100%;height:100%;object-fit:cover;display:block}
+.reel h3{margin-top:18px}
+.reel p{color:var(--muted);font-size:.96rem}
+.reel .goal{margin-top:10px;color:var(--ivory)}
+.reel .goal b{color:var(--gold);font-weight:600}
 
 /* process */
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;counter-reset:s;border-top:2px solid var(--ink)}
-.step{padding:22px 18px 8px 0;counter-increment:s;position:relative}
-.step::before{content:counter(s);font:800 1.7rem var(--display);color:var(--accent);display:block;margin-bottom:6px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border-top:1px solid var(--gold)}
+.step{padding:22px 18px 8px 0}
+.step i{font:500 .8rem var(--mono);color:var(--gold);font-style:normal;letter-spacing:.14em;display:block;margin-bottom:8px}
 .step p{color:var(--muted);font-size:.95rem}
 
-/* tools */
-.tags{display:flex;flex-wrap:wrap;gap:10px}
-.tag{padding:9px 18px;border:1px solid var(--line);background:var(--panel);border-radius:999px;font-weight:500}
-.tools h3{margin:26px 0 12px;font-size:1.05rem;color:var(--muted)}
-
 /* contact */
-.contact{background:var(--screen);color:#EEF1F8;border-radius:22px;padding:56px 40px;margin-bottom:56px}
-.contact p{color:#B7BFD8;margin-top:6px}
-.contact .btn.ghost{color:#EEF1F8;border-color:#EEF1F8}
-.contact .btn{background:var(--tc);border-color:var(--tc);color:#141A2B}
-footer{padding:0 0 40px;color:var(--muted);font-size:.92rem}
+.contact{border:1px solid var(--gold);border-radius:14px;padding:60px 40px;margin-bottom:50px;background:radial-gradient(circle at 80% 0,#D4AF6A22,transparent 60%),var(--panel)}
+.contact p{color:#D8D2C6;margin-top:8px}
+footer{padding:0 0 44px;color:var(--muted);font-size:.9rem}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <header><div class="wrap"><nav>
   <a class="logo" href="#top">ADE WALE</a>
-  <ul><li><a href="#work">Work</a></li><li class="hide-sm"><a href="#services">Services</a></li><li class="hide-sm"><a href="#process">Process</a></li><li><a href="#contact">Contact</a></li></ul>
+  <ul><li><a href="#work">Work</a></li><li class="hide-sm"><a href="#about">About</a></li><li class="hide-sm"><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul>
 </nav></div></header>
 
 <main id="top">
-<section class="hero"><div class="wrap">
-  <h1>Turning imagination into visual experiences.</h1>
-  <p>I'm ADE WALE, an AI Video Creator and Visual Storyteller. I turn ideas, products and brands into captivating visual experiences.</p>
-  <div class="btns"><a class="btn" href="#work">Watch the work</a><a class="btn ghost" href="#contact">Start a project</a></div>
+<section class="hero">
+  <video id="heroVid" autoplay muted loop playsinline preload="auto" aria-hidden="true"><source src="videos/video-2.mp4" type="video/mp4"></video>
+  <div class="bar t"></div><div class="bar b"></div>
+  <div class="wrap">
+    <div class="chip"><img src="profile.jpg" alt="ADE WALE"><span class="rec"></span>ADE WALE · AI Video Creator</div>
+    <h1>Turning <em>imagination</em> into visual experiences.</h1>
+    <p>AI commercials, product ads, UGC-style videos and cinematic brand visuals that capture attention and make people remember your brand.</p>
+    <div class="btns"><a class="btn" href="#work">Watch the reels</a><a class="btn ghost" href="#contact">Start a project</a></div>
+  </div>
+</section>
 
-  <div class="player" aria-hidden="true">
-    <div class="screen">Imagination → Story → Visuals → Final cut</div>
-    <div class="tracks" id="tracks">
-      <div class="track"><div class="clip v" style="flex:3">Hook</div><div class="clip v" style="flex:4">Product shot</div><div class="clip v" style="flex:3">Presenter</div><div class="clip v" style="flex:2">Tagline</div></div>
-      <div class="track"><div class="clip" style="flex:5">Captions</div><div class="clip" style="flex:4">Overlays</div><div class="clip" style="flex:3">Logo</div></div>
-      <div class="track"><div class="clip a" style="flex:12">Voice-over and music</div></div>
-      <div class="playhead" id="playhead"></div>
-    </div>
-    <div class="tcode" id="tcode">00:00:00</div>
+<section id="about"><div class="wrap about">
+  <div class="portrait"><img src="profile.jpg" alt="Portrait of ADE WALE" loading="lazy"><span>ADE WALE</span></div>
+  <div>
+    <span class="tc">00:01 · About</span>
+    <h2>AI Video Creator and Visual Storyteller</h2>
+    <p>I'm passionate about transforming ideas, products and brands into captivating visual experiences.</p>
+    <p>I create AI-powered commercials, product advertisements, UGC-style videos and cinematic brand visuals that do more than look good. They capture attention, communicate value and make people remember your brand.</p>
+    <p>From scroll-stopping hooks and creative storytelling to realistic product demonstrations and cinematic scenes, I combine creativity, AI technology and strategic thinking to bring concepts to life.</p>
+    <p>My goal is simple: to help brands stand out in a crowded digital world through visuals that inspire curiosity, spark emotion and leave a lasting impression.</p>
   </div>
 </div></section>
 
-<section id="about"><div class="wrap">
-  <h2>About</h2>
-  <p style="margin-bottom:16px">I'm an AI Video Creator and Visual Storyteller passionate about transforming ideas, products and brands into captivating visual experiences.</p>
-  <p style="margin-bottom:16px">I create AI-powered commercials, product advertisements, UGC-style videos and cinematic brand visuals that do more than look good. They capture attention, communicate value and make people remember your brand.</p>
-  <p style="margin-bottom:16px">From scroll-stopping hooks and creative storytelling to realistic product demonstrations and cinematic scenes, I combine creativity, AI technology and strategic thinking to bring concepts to life.</p>
-  <p>My goal is simple: to help brands stand out in a crowded digital world through visuals that inspire curiosity, spark emotion and leave a lasting impression.</p>
+<section id="work"><div class="wrap">
+  <span class="tc">00:02 · Reels</span>
+  <h2>Selected work</h2>
+  <p class="lead">Press play on any reel.</p>
+  <div class="filters" role="group" aria-label="Filter reels">
+    <button aria-pressed="true" data-f="all">All</button>
+    <button aria-pressed="false" data-f="beauty">Beauty and Skincare</button>
+    <button aria-pressed="false" data-f="product">Product Ads</button>
+    <button aria-pressed="false" data-f="ugc">AI UGC</button>
+  </div>
+  <div class="reels">
+    <article class="reel" data-cat="beauty product">
+      <div class="vid"><video controls preload="metadata" playsinline><source src="videos/video-1.mp4#t=0.5" type="video/mp4"></video></div>
+      <h3>Product Reveal Video</h3>
+      <p>Jelai body butter cream intensely restores and softens skin, leaving it soft and hydrated. Made with natural ingredients that improve tone, relieve irritation and prevent sun-induced dryness.</p>
+      <p class="goal"><b>Goal:</b> Showcase product quality through cinematic visuals.</p>
+    </article>
+    <article class="reel wide" data-cat="beauty ugc">
+      <div class="vid"><video controls preload="metadata" playsinline><source src="videos/video-2.mp4#t=0.5" type="video/mp4"></video></div>
+      <h3>UGC Style Presenter Video</h3>
+      <p>An elegant female presenter stays in front of the camera and talks about a skincare product named "OLAY Vitamin C", then showcases the product.</p>
+      <p class="goal"><b>Goal:</b> Build product awareness through relatable storytelling.</p>
+    </article>
+    <article class="reel" data-cat="beauty ugc">
+      <div class="vid"><video controls preload="metadata" playsinline><source src="videos/video-3.mp4#t=0.5" type="video/mp4"></video></div>
+      <h3>Short AI Vertical Content Video</h3>
+      <p>A realistic, AI-generated UGC-style skincare advertisement designed to capture attention with a relatable skin concern, introduce Olay Vitamin C Body Lotion, and build product awareness while encouraging potential customers to explore the product.</p>
+      <p class="goal"><b>Goal:</b> Capture attention and encourage product discovery.</p>
+    </article>
+  </div>
 </div></section>
 
 <section id="services"><div class="wrap">
+  <span class="tc">00:03 · Services</span>
   <h2>What I create</h2>
   <p class="lead">Videos that capture attention, communicate value and stay in people's minds.</p>
-  <div class="grid3"><div class="card"><h3>AI Product Commercials and Ads</h3><p>Polished commercials that put your product at the centre.</p></div><div class="card"><h3>AI UGC-Style Video Ads</h3><p>Natural, social-first videos with AI presenters.</p></div><div class="card"><h3>Cinematic Brand Videos</h3><p>Story-led visuals that give a brand a look and a feeling.</p></div><div class="card"><h3>AI Product Demonstrations</h3><p>Realistic videos that show how a product works.</p></div><div class="card"><h3>Beauty, Skincare and Lifestyle Commercials</h3><p>Clean, aspirational visuals for beauty and lifestyle brands.</p></div><div class="card"><h3>Social Media Video Ads</h3><p>Scroll-stopping hooks in formats built for each platform.</p></div><div class="card"><h3>Creative AI Visual Storytelling</h3><p>Original concepts that spark curiosity and emotion.</p></div></div>
-</div></section>
-
-<section id="work"><div class="wrap">
-  <h2>Selected work</h2>
-  <p class="lead">Press play on any video.</p>
-  <div class="work">
-
-    <article class="piece">
-      <div class="vid vertical"><video controls preload="metadata" playsinline poster=""><source src="videos/video-1.mp4" type="video/mp4"></video><div class="ph">Add your video here:<br>videos/video-1.mp4</div></div>
-      <div><p class="meta">AI product commercial · 9:16</p><h3>Product Reveal Video</h3><p>Jelai body butter cream intensely restores and softens skin, leaving it soft and hydrated. Made with natural ingredients that improve tone, relieve irritation and prevent sun-induced dryness.</p>
-      <dl><div><dt>Goal: </dt><dd>Communicate authenticity, elegance and uniqueness</dd></div></dl></div>
-    </article>
-
-    <article class="piece">
-      <div class="vid"><video controls preload="metadata" playsinline><source src="videos/video-2.mp4" type="video/mp4"></video><div class="ph">Add your video here:<br>videos/video-2.mp4</div></div>
-      <div><p class="meta">AI UGC-style ad · 16:9</p><h3>UGC Style Presenter Video</h3><p>An elegant female presenter stays in front of the camera and talks about a skincare product named "OLAY Vitamin C", then showcases the product.</p>
-      <dl><div><dt>Goal: </dt><dd>Communicate authenticity, elegance and uniqueness</dd></div></dl></div>
-    </article>
-
-    <article class="piece">
-      <div class="vid vertical"><video controls preload="metadata" playsinline><source src="videos/video-3.mp4" type="video/mp4"></video><div class="ph">Add your video here:<br>videos/video-3.mp4</div></div>
-      <div><p class="meta">Social media content · 9:16</p><h3>Short AI Vertical Content Video</h3><p>A realistic, AI-generated UGC-style skincare advertisement designed to capture attention with a relatable skin concern, introduce Olay Vitamin C Body Lotion, and build product awareness while encouraging potential customers to explore the product.</p>
-      <dl><div><dt>Goal: </dt><dd>Communicate authenticity, elegance and uniqueness</dd></div></dl></div>
-    </article>
-
+  <div class="grid">
+    <div class="card"><h3>AI Product Commercials and Ads</h3><p>Polished commercials that put your product at the centre.</p></div>
+    <div class="card"><h3>AI UGC-Style Video Ads</h3><p>Natural, social-first videos with AI presenters.</p></div>
+    <div class="card"><h3>Cinematic Brand Videos</h3><p>Story-led visuals that give a brand a look and a feeling.</p></div>
+    <div class="card"><h3>AI Product Demonstrations</h3><p>Realistic videos that show how a product works.</p></div>
+    <div class="card"><h3>Beauty, Skincare and Lifestyle Commercials</h3><p>Clean, aspirational visuals for beauty and lifestyle brands.</p></div>
+    <div class="card"><h3>Social Media Video Ads</h3><p>Scroll-stopping hooks in formats built for each platform.</p></div>
+    <div class="card"><h3>Creative AI Visual Storytelling</h3><p>Original concepts that spark curiosity and emotion.</p></div>
   </div>
 </div></section>
 
 <section id="process"><div class="wrap">
-  <h2>How a video gets made</h2>
+  <span class="tc">00:04 · Process</span>
+  <h2>From idea to final cut</h2>
   <p class="lead">The tool comes after the idea.</p>
   <div class="steps">
-    <div class="step"><h3>Brief</h3><p>Audience, message, platform and length.</p></div>
-    <div class="step"><h3>Script</h3><p>Hook, key line and call to action.</p></div>
-    <div class="step"><h3>Generate</h3><p>Visuals, voice and presenter built and refined.</p></div>
-    <div class="step"><h3>Edit</h3><p>Cuts, captions, music and branding.</p></div>
-    <div class="step"><h3>Deliver</h3><p>Files in the right formats, plus one round of changes.</p></div>
+    <div class="step"><i>01</i><h3>Brief</h3><p>Audience, message, platform and length.</p></div>
+    <div class="step"><i>02</i><h3>Script</h3><p>Hook, key line and call to action.</p></div>
+    <div class="step"><i>03</i><h3>Generate</h3><p>Visuals, voice and presenter built and refined.</p></div>
+    <div class="step"><i>04</i><h3>Edit</h3><p>Cuts, captions, music and branding.</p></div>
+    <div class="step"><i>05</i><h3>Deliver</h3><p>Files in the right formats, plus one round of changes.</p></div>
   </div>
 </div></section>
 
 <section id="contact" style="padding-top:0"><div class="wrap">
   <div class="contact">
+    <span class="tc">Final scene</span>
     <h2>Have a big idea?</h2>
     <p>Let's turn your next big idea into something unforgettable.</p>
     <div class="btns"><a class="btn" href="https://www.linkedin.com/in/ade-wale" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
@@ -188,18 +195,16 @@ footer{padding:0 0 40px;color:var(--muted);font-size:.92rem}
 
 <script>
 (function(){
-  var ph=document.getElementById('playhead'),tc=document.getElementById('tcode'),box=document.getElementById('tracks');
-  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function fmt(p){var s=Math.round(p*30);return '00:00:'+String(s).padStart(2,'0')}
-  function set(p){ph.style.left=(p*100)+'%';tc.textContent=fmt(p)}
-  if(reduce){set(.4);return}
-  var t0=null,dur=6000;
-  function tick(t){if(t0===null)t0=t;var p=Math.min((t-t0)/dur,1);set(p);if(p<1)requestAnimationFrame(tick)}
-  requestAnimationFrame(tick);
-  // hide the placeholder note once a real video loads
-  document.querySelectorAll('.vid video').forEach(function(v){
-    v.addEventListener('loadeddata',function(){var n=v.parentNode.querySelector('.ph');if(n)n.style.display='none'});
-  });
+  var hv=document.getElementById('heroVid');
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){hv.removeAttribute('autoplay');hv.pause()}
+  var btns=document.querySelectorAll('.filters button'),reels=document.querySelectorAll('.reel');
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    btns.forEach(function(x){x.setAttribute('aria-pressed','false')});
+    b.setAttribute('aria-pressed','true');
+    var f=b.dataset.f;
+    reels.forEach(function(r){r.hidden=!(f==='all'||r.dataset.cat.split(' ').indexOf(f)>-1);
+      if(r.hidden){var v=r.querySelector('video');if(v)v.pause()}});
+  })});
 })();
 </script>
 </body>
