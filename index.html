@@ -7,30 +7,30 @@
 <meta name="description" content="ADE WALE is an AI video creator and visual storyteller making AI commercials, product ads, UGC-style videos and cinematic brand visuals.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Unbounded:wght@500;700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0A0A0B;--panel:#141416;--line:#2A2A2E;--ivory:#F3EDE2;--muted:#A39E92;--gold:#D4AF6A;--display:'Syne',Georgia,sans-serif;--body:'Manrope',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
+:root{--bg:#0A0A0B;--panel:#141416;--line:#2A2A2E;--ivory:#F3EDE2;--muted:#A39E92;--gold:#D4AF6A;--display:'Unbounded','Arial Black',sans-serif;--headline:'Playfair Display',Georgia,serif;--body:'Manrope',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace}
 *{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;color-scheme:dark}
+html{scroll-behavior:smooth;color-scheme:dark;overflow-x:hidden}
 body{background:var(--bg);color:var(--ivory);font:400 1.04rem/1.7 var(--body);-webkit-font-smoothing:antialiased}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 h1,h2,h3{font-family:var(--display);line-height:1.05;letter-spacing:-.02em}
-h2{font-size:clamp(2rem,4.6vw,3.2rem);font-weight:800;margin-bottom:12px}
-h3{font-size:1.3rem;font-weight:600;margin-bottom:8px}
+h2{font-size:clamp(1.6rem,4vw,2.6rem);font-weight:700;margin-bottom:12px;overflow-wrap:break-word}
+h3{font-size:1.05rem;font-weight:500;margin-bottom:8px;line-height:1.25}
 p{max-width:62ch}
 section{padding:88px 0}
 .tc{font:500 .78rem var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:14px}
 .lead{color:var(--muted);margin-bottom:36px}
 header{position:fixed;top:0;left:0;right:0;z-index:10;background:linear-gradient(#0A0A0Bcc,#0A0A0B00)}
 nav{display:flex;align-items:center;justify-content:space-between;height:70px}
-.logo{font:800 1.2rem var(--display);text-decoration:none;letter-spacing:.04em}
+.logo{font:700 1.02rem var(--display);text-decoration:none;letter-spacing:.02em}
 nav ul{display:flex;gap:26px;list-style:none;padding:0}
 nav ul a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--ivory)}
 nav ul a:hover{color:var(--gold)}
 @media(max-width:640px){nav ul{gap:16px}.hide-sm{display:none}}
-.btn{display:inline-block;padding:14px 28px;border-radius:999px;background:var(--gold);color:#0A0A0B;font-weight:600;text-decoration:none;border:2px solid var(--gold)}
+.btn{display:inline-block;text-align:center;padding:14px 28px;border-radius:999px;background:var(--gold);color:#0A0A0B;font-weight:600;text-decoration:none;border:2px solid var(--gold)}
 .btn:hover{filter:brightness(1.1)}
 .btn.ghost{background:transparent;color:var(--ivory);border-color:var(--ivory)}
 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
@@ -45,7 +45,7 @@ nav ul a:hover{color:var(--gold)}
 .chip{display:inline-flex;align-items:center;gap:12px;padding:6px 18px 6px 6px;border:1px solid var(--line);border-radius:999px;background:#0A0A0B99;margin-bottom:26px;font:500 .78rem var(--mono);letter-spacing:.12em;text-transform:uppercase}
 .chip img{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:50% 20%;border:2px solid var(--gold)}
 .rec{width:8px;height:8px;border-radius:50%;background:#E5483B}
-.hero h1{font-size:clamp(2.8rem,8vw,6rem);font-weight:800;max-width:13ch}
+.hero h1{font-family:var(--headline);font-size:clamp(2.5rem,9.5vw,5.6rem);font-weight:700;max-width:14ch;letter-spacing:-.01em;line-height:1.05;overflow-wrap:break-word}
 .hero h1 em{font-style:normal;color:var(--gold)}
 .hero p{font-size:1.15rem;color:#D8D2C6;margin-top:22px}
 
@@ -60,7 +60,7 @@ nav ul a:hover{color:var(--gold)}
 /* services */
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
 .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:26px}
-.card h3{font-size:1.1rem}
+.card h3{font-size:.98rem}
 .card p{color:var(--muted);font-size:.96rem}
 
 /* work */
@@ -89,6 +89,40 @@ nav ul a:hover{color:var(--gold)}
 .contact{border:1px solid var(--gold);border-radius:14px;padding:60px 40px;margin-bottom:50px;background:radial-gradient(circle at 80% 0,#D4AF6A22,transparent 60%),var(--panel)}
 .contact p{color:#D8D2C6;margin-top:8px}
 footer{padding:0 0 44px;color:var(--muted);font-size:.9rem}
+
+/* ---------- phone layout ---------- */
+@media(max-width:700px){
+  body{font-size:1rem}
+  .wrap{padding:0 20px}
+  section{padding:60px 0}
+  nav{height:60px}
+  nav ul{gap:18px}
+  nav ul a{font-size:.88rem}
+  .hero{min-height:100svh;padding:90px 0 60px;align-items:flex-end}
+  .hero video{opacity:.42;object-position:50% 50%}
+  .hero::after{background:linear-gradient(0deg,#0A0A0B 12%,#0A0A0B99 55%,#0A0A0B55)}
+  .bar{height:3vh}
+  .chip{font-size:.62rem;letter-spacing:.08em;margin-bottom:20px;max-width:100%}
+  .chip img{width:38px;height:38px}
+  .hero h1{max-width:none}
+  .hero p{font-size:1rem;margin-top:16px}
+  .btns{margin-top:24px;gap:10px}
+  .btns .btn{flex:1 1 100%;padding:14px 20px}
+  .about{gap:28px}
+  .portrait{max-width:300px;width:100%}
+  .lead{margin-bottom:26px}
+  .filters{gap:8px;margin-bottom:26px}
+  .filters button{font-size:.68rem;padding:9px 14px}
+  .reels{grid-template-columns:1fr;gap:48px}
+  .reel.wide{grid-column:auto}
+  .vid,.reel.wide .vid{max-width:100%;width:100%;margin:0}
+  .reel h3{margin-top:16px}
+  .grid{grid-template-columns:1fr;gap:14px}
+  .card{padding:22px}
+  .steps{grid-template-columns:1fr;border-top:none}
+  .step{padding:18px 0;border-top:1px solid var(--line)}
+  .contact{padding:36px 22px;margin-bottom:36px}
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
