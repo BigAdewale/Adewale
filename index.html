@@ -96,6 +96,27 @@ nav ul a:hover{color:var(--gold)}
 .contact p{color:#D8D2C6;margin-top:8px}
 footer{padding:0 0 44px;color:var(--muted);font-size:.9rem}
 
+
+/* storyboard */
+.inl{color:var(--gold)}
+.strip{list-style:none;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.strip li h3{font-size:.9rem;margin:14px 0 6px;color:var(--gold)}
+.strip li p{font-size:.88rem;color:var(--muted);line-height:1.5}
+.frame{position:relative;display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#000;cursor:zoom-in;aspect-ratio:9/16}
+.frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.frame:hover img{transform:scale(1.04)}
+.sn{position:absolute;left:8px;top:8px;font:500 .62rem var(--mono);letter-spacing:.12em;text-transform:uppercase;background:#0A0A0Bcc;color:var(--gold);padding:4px 8px;border-radius:3px}
+dialog{background:var(--bg);color:var(--ivory);border:1px solid var(--gold);border-radius:10px;padding:18px;max-width:min(92vw,480px);margin:auto;text-align:center}
+dialog::backdrop{background:#000d}
+dialog img{max-width:100%;max-height:68vh;border-radius:6px}
+dialog p{margin:12px auto 0;font-size:.92rem;color:var(--muted)}
+.nv{display:flex;justify-content:space-between;margin-top:14px}
+.nv button,.x{font:500 .8rem var(--mono);color:var(--ivory);background:transparent;border:1px solid var(--line);border-radius:999px;padding:9px 16px;cursor:pointer}
+.x{position:absolute;top:10px;right:10px;font-size:1.2rem;line-height:1;padding:6px 12px;background:#0A0A0Bcc;z-index:2}
+@media(max-width:900px){
+  .strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin:0 -20px;padding:0 20px 14px}
+  .strip li{flex:0 0 62%;max-width:260px;scroll-snap-align:start}
+}
 /* ---------- phone layout ---------- */
 @media(max-width:700px){
   body{font-size:1rem}
@@ -171,6 +192,7 @@ footer{padding:0 0 44px;color:var(--muted);font-size:.9rem}
     <button aria-pressed="false" data-f="beauty">Beauty and Skincare</button>
     <button aria-pressed="false" data-f="product">Product Ads</button>
     <button aria-pressed="false" data-f="ugc">AI UGC</button>
+    <button aria-pressed="false" data-f="cinematic">Cinematic Brand</button>
   </div>
   <div class="reels">
     <article class="reel" data-cat="beauty product">
@@ -181,21 +203,54 @@ footer{padding:0 0 44px;color:var(--muted);font-size:.9rem}
     </article>
     <article class="reel wide" data-cat="beauty ugc">
       <div class="vid"><video controls preload="metadata" playsinline><source src="videos/video-2.mp4#t=0.5" type="video/mp4"></video></div>
-      <h3>UGC Style Presenter Video</h3>
-      <p>An elegant female presenter stays in front of the camera and talks about a skincare product named "OLAY Vitamin C", then showcases the product.</p>
+      <h3>AI Product Launch Video / UGC Style Female Spokesperson Video</h3>
+      <p>An elegant female spokesperson reveals the unique selling point of a skincare product named "OLAY VITAMIN C BODY LOTION".</p>
       <p class="goal"><b>Goal:</b> Build product awareness through relatable storytelling.</p>
     </article>
-    <article class="reel" data-cat="beauty ugc">
+    <article class="reel" id="reel-3" data-cat="beauty ugc">
       <div class="vid"><video controls preload="metadata" playsinline><source src="videos/video-3.mp4#t=0.5" type="video/mp4"></video></div>
-      <h3>Short AI Vertical Content Video</h3>
-      <p>A realistic, AI-generated UGC-style skincare advertisement designed to capture attention with a relatable skin concern, introduce Olay Vitamin C Body Lotion, and build product awareness while encouraging potential customers to explore the product.</p>
+      <h3>AI UGC Skincare Content Video</h3>
+      <p>A realistic, UGC-style skincare advertisement designed to capture attention with a relatable skin concern, introduce Olay Vitamin C Body Lotion and build awareness while encouraging potential customers to explore the product.</p>
       <p class="goal"><b>Goal:</b> Capture attention and encourage product discovery.</p>
     </article>
+    <article class="reel wide" data-cat="product">
+      <div class="vid"><video controls preload="metadata" playsinline><source src="videos/video-4.mp4#t=0.5" type="video/mp4"></video></div>
+      <h3>AI Commercial | Baby Diaper Marketing Advertisement Video</h3>
+      <p>A marketing video that opens with a relatable parenting pain point, middle-of-the-night leaks and a waking baby, and introduces the product as a solution.</p>
+      <p class="goal"><b>Goal:</b> Showcase product features, brand name packaging, softness and usability.</p>
+    </article>
+    <article class="reel wide" data-cat="product cinematic">
+      <div class="vid"><video controls preload="metadata" playsinline><source src="videos/video-5.mp4#t=0.5" type="video/mp4"></video></div>
+      <h3>Luxury Wristwatch Product Showcase Video</h3>
+      <p>A showcase of the VÉRON Prestige Automatic wristwatch as a symbol of luxury, precision, elegance and timeless sophistication.</p>
+      <p class="goal"><b>Goal:</b> Capture attention, highlight the watch's premium design, build brand appeal and create a desire to own it.</p>
+    </article>
+
   </div>
 </div></section>
 
+<section id="storyboard"><div class="wrap">
+  <span class="tc">00:03 · Storyboard</span>
+  <h2>The storyboard: from idea to final cut</h2>
+  <p class="lead">Five key frames from the AI UGC Skincare Content Video, showing how the ad moves from a relatable problem to a clear call to action. <a class="inl" href="#reel-3" id="seeFinal">Watch the final video</a></p>
+  <ol class="strip">
+      <li><button class="frame" data-i="0" aria-label="Open scene 1: Hook"><img src="images/story-1.jpg" alt="Creator holding Olay Vitamin C Body Lotion with a surprised expression and the text Dull skin" loading="lazy"><span class="sn">Scene 01</span></button><h3>Hook</h3><p>A relatable skin concern opens the ad: “Dull skin?”</p></li>
+      <li><button class="frame" data-i="1" aria-label="Open scene 2: Product intro"><img src="images/story-2.jpg" alt="Creator smiling and holding the Olay Vitamin C Brightening Body Lotion bottle" loading="lazy"><span class="sn">Scene 02</span></button><h3>Product intro</h3><p>The product is introduced with its key ingredients: Vitamin C + Niacinamide.</p></li>
+      <li><button class="frame" data-i="2" aria-label="Open scene 3: Texture demo"><img src="images/story-3.jpg" alt="Split frame of lotion pumped into a palm and smoothed over an arm" loading="lazy"><span class="sn">Scene 03</span></button><h3>Texture demo</h3><p>Close-ups show the pump and the lotion on skin: lightweight, silky and non-greasy.</p></li>
+      <li><button class="frame" data-i="3" aria-label="Open scene 4: Benefits"><img src="images/story-4.jpg" alt="Creator applying lotion to her arm with benefit callouts beside her" loading="lazy"><span class="sn">Scene 04</span></button><h3>Benefits</h3><p>Application with benefit callouts: Vitamin C brightens, Niacinamide helps fade the look of dark spots, and the lotion hydrates.</p></li>
+      <li><button class="frame" data-i="4" aria-label="Open scene 5: Call to action"><img src="images/story-5.jpg" alt="Creator holding the lotion with a 2X brighter-looking skin headline" loading="lazy"><span class="sn">Scene 05</span></button><h3>Call to action</h3><p>The closing frame holds the product with a headline claim and the brand lockup.</p></li>
+  </ol>
+</div></section>
+
+<dialog id="lb" aria-label="Storyboard viewer">
+  <button class="x" id="lbClose" aria-label="Close">×</button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+  <div class="nv"><button id="lbPrev" aria-label="Previous scene">← Prev</button><button id="lbNext" aria-label="Next scene">Next →</button></div>
+</dialog>
+
 <section id="services"><div class="wrap">
-  <span class="tc">00:03 · Services</span>
+  <span class="tc">00:04 · Services</span>
   <h2>What I create</h2>
   <p class="lead">Videos that capture attention, communicate value and stay in people's minds.</p>
   <div class="grid">
@@ -210,7 +265,7 @@ footer{padding:0 0 44px;color:var(--muted);font-size:.9rem}
 </div></section>
 
 <section id="process"><div class="wrap">
-  <span class="tc">00:04 · Process</span>
+  <span class="tc">00:05 · Process</span>
   <h2>From idea to final cut</h2>
   <p class="lead">The tool comes after the idea.</p>
   <div class="steps">
@@ -245,6 +300,19 @@ footer{padding:0 0 44px;color:var(--muted);font-size:.9rem}
     reels.forEach(function(r){r.hidden=!(f==='all'||r.dataset.cat.split(' ').indexOf(f)>-1);
       if(r.hidden){var v=r.querySelector('video');if(v)v.pause()}});
   })});
+})();
+</script>
+<script>
+(function(){
+  var frames=[].slice.call(document.querySelectorAll('.frame')),lb=document.getElementById('lb'),img=document.getElementById('lbImg'),cap=document.getElementById('lbCap'),cur=0;
+  function show(i){cur=(i+frames.length)%frames.length;var f=frames[cur].querySelector('img'),h=frames[cur].parentNode.querySelector('h3').textContent;img.src=f.src;img.alt=f.alt;cap.textContent='Scene 0'+(cur+1)+' · '+h}
+  frames.forEach(function(b,i){b.addEventListener('click',function(){show(i);if(lb.showModal)lb.showModal()})});
+  document.getElementById('lbClose').onclick=function(){lb.close()};
+  document.getElementById('lbPrev').onclick=function(){show(cur-1)};
+  document.getElementById('lbNext').onclick=function(){show(cur+1)};
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+  lb.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+  document.getElementById('seeFinal').addEventListener('click',function(){var all=document.querySelector('.filters button[data-f="all"]');if(all)all.click()});
 })();
 </script>
 </body>
